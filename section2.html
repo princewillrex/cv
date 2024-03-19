@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="section2.css">
+  </head>
+  <body
+    style="
+      margin: 0;
+      padding: 0;
+      font-family: poppins;
+      background-color: #f3f8fb;
+    "
+  >
+    <section>
+      <nav
+        style="
+          width: 200px;
+          height: 600px;
+          background-color: #163651;
+          position: relative;
+          z-index: 10;
+          position: fixed;
+        "
+      >
+        <img
+          src="./img/bitcoin image.png"
+          alt=""
+          style="width: 90px; position: absolute; top: 30px; left: 50px"
+        />
+        <div style="position:absolute ;top:180px;left:20px;">
+        <li style="list-style: none">
+          <a
+            href="#section2.html"
+            style="
+              text-decoration: none;
+              color: gray;
+              font-weight: 300px;
+              line-height: 45px;
+            "
+            >Trade Center</a
+          >
+        </li>
+        <li style="list-style: none">
+          <a
+            href=""
+            style="
+              text-decoration: none;
+              color: gray;
+              font-weight: 300px;
+              line-height: 45px;
+            "
+          >
+            Fund Account</a
+          >
+        </li>
+        <li style="list-style: none">
+          <a
+            href=""
+            style="
+              text-decoration: none;
+              color: gray;
+              font-weight: 300px;
+              line-height: 45px;
+            "
+            >Withdraw</a
+          >
+        </li>
+        <li style="list-style: none">
+          <a
+            href=""
+            style="
+              text-decoration: none;
+              color: gray;
+              font-weight: 300px;
+              line-height: 45px;
+            "
+          >
+            Account Upgrade</a
+          >
+        </li>
+        <li style="list-style: none">
+          <a
+            href=""
+            style="
+              text-decoration: none;
+              color: gray;
+              font-weight: 300px;
+              line-height: 45px;
+            "
+            >Trade History</a
+          >
+        </li>
+        <li style="list-style: none">
+          <a
+            href=""
+            style="
+              text-decoration: none;
+              color: gray;
+              font-weight: 300px;
+              line-height: 45px;
+            "
+            >Profile</a
+          >
+        </li>
+        <li style="list-style: none">
+          <a
+            href=""
+            style="
+              text-decoration: none;
+              color: gray;
+              font-weight: 300px;
+              line-height: 45px;
+            "
+          >
+            Change Password</a
+          >
+        </li>
+        <li style="list-style: none">
+          <a
+            href=""
+            style="
+              text-decoration: none;
+              color: gray;
+              font-weight: 300px;
+              line-height: 45px;
+            "
+            >Logout</a
+          >
+        </li>
+      </div>
+      </nav>
+      <section style="position: relative">
+        <div
+          style="
+            width: 100%;
+            height: 130px;
+            background-color: #163651;
+            position: absolute;
+            top: 30px;
+          "
+        >
+          <img
+            src="./img/bitcoin image.png"
+            alt=""
+            style="width: 90px; position: absolute; top: 20px; left: 280px"
+          />
+        </div>
+        <div style="display: flex; position: absolute; top: 150px; left: 300px">
+          <h1
+            style="
+              color: gray;
+              font-weight: 300;
+              position: absolute;
+              right: -30px;
+            "
+          >
+            Dashboard
+          </h1>
+          <p
+            style="
+              color: gray;
+              position: absolute;
+              left: 60px;
+              top: 10px;
+              font-size: smaller;
+            "
+          >
+            <a href="" style="text-decoration: none">Home</a>&nbsp;/Dashboard
+          </p>
+        </div>
+        <div
+          style="
+            width: 980px;
+            height: 60px;
+            background-color: #163651;
+            position: absolute;
+            top: 200px;
+            left: 230px;
+          "
+        ></div>
+        <div
+          style="
+            width: 310px;
+            height: 150px;
+            background-color: #28a745;
+            position: absolute;
+            left: 230px;
+            top: 300px;
+            border-radius: 5px;
+          "
+        >
+          <li
+            style="
+              list-style: none;
+              font-size: small;
+              font-weight: bold;
+              color: white;
+              position: absolute;
+              top: 10px;
+              left: 10px;
+            "
+          >
+            Welcome
+          </li>
+
+          <li
+            style="
+              list-style: none;
+              font-size: small;
+              font-weight: bold;
+              color: white;
+              position: absolute;
+              top: 40px;
+              left: 10px;
+            "
+          >
+            Account Level:
+          </li>
+
+          <li
+            style="
+              list-style: none;
+              font-size: small;
+              font-weight: bold;
+              color: white;
+              position: absolute;
+              top: 70px;
+              left: 10px;
+            "
+          >
+            Balance:
+          </li>
+
+          <li
+            style="
+              list-style: none;
+              font-size: small;
+              font-weight: 300;
+              color: white;
+              position: absolute;
+              top: 70px;
+              left: 260px;
+            "
+          >
+            $0.00
+          </li>
+
+          <li
+            style="
+              list-style: none;
+              font-size: small;
+              font-weight: bold;
+              color: white;
+              position: absolute;
+              top: 95px;
+              left: 10px;
+            "
+          >
+            Invested:
+          </li>
+
+          <li
+            style="
+              list-style: none;
+              font-size: small;
+              font-weight: 300;
+              color: white;
+              position: absolute;
+              top: 95px;
+              left: 260px;
+            "
+          >
+            $0.00
+          </li>
+
+          <li
+            style="
+              list-style: none;
+              font-size: small;
+              font-weight: bold;
+              color: white;
+              position: absolute;
+              top: 120px;
+              left: 10px;
+            "
+          >
+            Profit:
+          </li>
+
+          <li
+            style="
+              list-style: none;
+              font-size: small;
+              font-weight: 300;
+              color: white;
+              position: absolute;
+              top: 120px;
+              left: 260px;
+            "
+          >
+            $0.00
+          </li>
+        </div>
+        <div
+          style="
+            width: 310px;
+            height: 140px;
+            background-color: #5fbdcb94;
+            position: absolute;
+            left: 570px;
+            top: 300px;
+            border-radius: 5px;
+          "
+        >
+          <p
+            style="
+              font-size: medium;
+              color: rgb(56, 54, 54);
+              position: absolute;
+              left: 10px;
+            "
+          >
+            Investor's Satisfaction Guaranteed. <br />
+            Trade binary options and digital <br />
+            options with us. Pick the type of <br />
+            option that best suits your trading <br />
+            style and profitability expectations.
+          </p>
+        </div>
+        <div
+          style="
+            width: 310px;
+            height: 120px;
+            background-color: #cb5b8f86;
+            position: absolute;
+            left: 910px;
+            top: 300px;
+            border-radius: 5px;
+          "
+        >
+          <p
+            style="
+              font-size: medium;
+              color: #481419;
+              position: absolute;
+              left: 10px;
+            "
+          >
+            Trade Bitcoin with Leverage of up <br />
+            to 1:10; Our Bitcoin Spreads allow <br />
+            you to take short-term positions <br />
+            on the price of Bitcoin.
+          </p>
+        </div>
+        <div></div>
+        <div></div>
+        <div
+          style="
+            width: 950px;
+            height: 600px;
+            background-color: white;
+            position: absolute;
+            top: 950px;
+            left: 230px;
+          "
+        >
+          <h1
+            style="
+              position: absolute;
+              left: 30px;
+              top: 10px;
+              color: rgb(49, 43, 43);
+            "
+          >
+            Market Value And Trends
+          </h1>
+          <div
+            style="
+              width: 880px;
+              height: 60px;
+              background-color: #f3f8fb;
+              position: absolute;
+              top: 90px;
+              left: 30px;
+            "
+          >
+            <p style="position: absolute; left: 30px; top: 5px">Logo</p>
+            <p style="position: absolute; left: 150px; top: 5px">Coin Name</p>
+            <p style="position: absolute; left: 320px; top: 5px">Buy</p>
+            <p style="position: absolute; left: 420px; top: 5px">Sells</p>
+            <p style="position: absolute; left: 530px; top: 5px">Trends</p>
+            <p style="position: absolute; left: 650px; top: 5px">Attachments</p>
+            <p style="position: absolute; left: 810px; top: 5px">Stats</p>
+          </div>
+          <div
+            style="
+              width: 880px;
+              height: 60px;
+              background-color: #f3f8fb;
+              position: absolute;
+              top: 180px;
+              left: 30px;
+            "
+          >
+            <img
+              src="./img/b orange.png"
+              alt=""
+              style="width: 130px; position: absolute; top: -35px; left: -15px"
+            />
+            <p style="position: absolute; left: 150px">Dashcoin</p>
+            <p style="position: absolute; left: 320px">30%</p>
+            <img
+              src="./img/red arrow.png"
+              alt=""
+              style="width: 100px; position: absolute; left: 320px; top: -17px"
+            />
+            <p style="position: absolute; left: 420px">20%</p>
+            <img
+              src="./img/green arrow.png"
+              alt=""
+              style="width: 70px; position: absolute; left: 430px; top: -5px"
+            />
+            <img
+              src="./img/green and ash.png"
+              alt=""
+              style="width: 450px; position: absolute; left: 370px; top: -75px"
+            />
+            <p style="position: absolute; left: 650px">$ 56746,857</p>
+          </div>
+          <div
+            style="
+              width: 880px;
+              height: 60px;
+              background-color: #f3f8fb;
+              position: absolute;
+              top: 270px;
+              left: 30px;
+            "
+          >
+            <img
+              src="./img/b blue.png"
+              alt=""
+              style="width: 130px; position: absolute; top: -35px; left: -15px"
+            />
+            <p style="position: absolute; left: 150px">Litecoin</p>
+            <p style="position: absolute; left: 320px">30%</p>
+            <img
+              src="./img/red arrow.png"
+              alt=""
+              style="width: 100px; position: absolute; left: 320px; top: -17px"
+            />
+            <p style="position: absolute; left: 420px">20%</p>
+            <img
+              src="./img/green arrow.png"
+              alt=""
+              style="width: 70px; position: absolute; left: 430px; top: -5px"
+            />
+            <img
+              src="./img/red and ash.png"
+              alt=""
+              style="width: 450px; position: absolute; left: 360px; top: -155px"
+            />
+            <p style="position: absolute; left: 650px">$ 56746,857</p>
+          </div>
+          <div
+            style="
+              width: 880px;
+              height: 60px;
+              background-color: #f3f8fb;
+              position: absolute;
+              top: 360px;
+              left: 30px;
+            "
+          >
+            <img
+              src="./img/b purple.png"
+              alt=""
+              style="width: 130px; position: absolute; top: -35px; left: -15px"
+            />
+            <p style="position: absolute; left: 150px">Euthorium</p>
+            <p style="position: absolute; left: 320px">30%</p>
+            <img
+              src="./img/red arrow.png"
+              alt=""
+              style="width: 100px; position: absolute; left: 320px; top: -17px"
+            />
+            <p style="position: absolute; left: 420px">20%</p>
+            <img
+              src="./img/green arrow.png"
+              alt=""
+              style="width: 70px; position: absolute; left: 430px; top: -5px"
+            />
+            <img
+              src="./img/green and ash.png"
+              alt=""
+              style="width: 450px; position: absolute; left: 380px; top: -77px"
+            />
+            <p style="position: absolute; left: 650px">$ 56746,857</p>
+          </div>
+          <div
+            style="
+              width: 880px;
+              height: 60px;
+              background-color: #f3f8fb;
+              position: absolute;
+              top: 450px;
+              left: 30px;
+            "
+          >
+            <img
+              src="./img/b green.png"
+              alt=""
+              style="width: 130px; position: absolute; top: -35px; left: -15px"
+            />
+            <p style="position: absolute; left: 150px">Euthorium</p>
+            <p style="position: absolute; left: 320px">30%</p>
+            <img
+              src="./img/red arrow.png"
+              alt=""
+              style="width: 100px; position: absolute; left: 320px; top: -17px"
+            />
+            <p style="position: absolute; left: 420px">20%</p>
+            <img
+              src="./img/green arrow.png"
+              alt=""
+              style="width: 70px; position: absolute; left: 430px; top: -5px"
+            />
+            <img
+              src="./img/green and ash.png"
+              alt=""
+              style="width: 450px; position: absolute; left: 380px; top: -77px"
+            />
+            <p style="position: absolute; left: 650px">$ 56746,857</p>
+          </div>
+        </div>
+        <div
+          style="
+            width: 950px;
+            height: 600px;
+            background-color: white;
+            position: absolute;
+            top: 1650px;
+            left: 230px;
+          "
+        >
+          <h1
+            style="
+              position: absolute;
+              left: 30px;
+              top: 10px;
+              color: rgb(49, 43, 43);
+            "
+          >
+            Live Crypto Price
+          </h1>
+          <img
+            src="./img/orange b.png"
+            alt=""
+            style="width: 150px; position: absolute; left: -25px; top: 50px"
+          />
+          <p style="position: absolute; top: 100px; left: 60px">Bitcoin</p>
+          <img
+            src="./img/arrow up.png"
+            alt=""
+            style="width: 500px; position: absolute; top: -90px; left: 350px"
+          />
+          <p style="position: absolute; left: 600px; top: 110px">$876909.00</p>
+          <img
+            src="./img/blue l.png"
+            alt=""
+            style="width: 130px; position: absolute; left: -25px; top: 100px"
+          />
+          <p style="position: absolute; top: 155px; left: 60px">Litecoin</p>
+          <img
+            src="./img/arrow up.png"
+            alt=""
+            style="width: 500px; position: absolute; top: -40px; left: 350px"
+          />
+          <p style="position: absolute; left: 600px; top: 160px">$29780.00</p>
+          <img
+            src="./img/green d.png"
+            alt=""
+            style="width: 130px; position: absolute; left: -15px; top: 165px"
+          />
+          <p style="position: absolute; top: 210px; left: 60px">Dashcoin</p>
+          <img
+            src="./img/arrow up.png"
+            alt=""
+            style="width: 500px; position: absolute; top: 10px; left: 350px"
+          />
+          <p style="position: absolute; left: 600px; top: 210px">$13276.00</p>
+          <img
+            src="./img/orange b.png"
+            alt=""
+            style="width: 150px; position: absolute; left: -25px; top: 215px"
+          />
+          <p style="position: absolute; top: 265px; left: 60px">Bitcoindash</p>
+          <img
+            src="./img/arrow up.png"
+            alt=""
+            style="width: 500px; position: absolute; top: 60px; left: 350px"
+          />
+          <p style="position: absolute; left: 600px; top: 260px">$5684.890</p>
+          <img
+            src="./img/purple e.png"
+            alt=""
+            style="width: 110px; position: absolute; left: -8px; top: 290px"
+          />
+          <p style="position: absolute; top: 320px; left: 60px">Euthorium</p>
+          <img
+            src="./img/arrow up.png"
+            alt=""
+            style="width: 500px; position: absolute; top: 110px; left: 350px"
+          />
+          <p style="position: absolute; left: 600px; top: 310px">$3890.98</p>
+          <img
+            src="./img/gb.png"
+            alt=""
+            style="width: 110px; position: absolute; left: -8px; top: 340px"
+          />
+          <p style="position: absolute; top: 375px; left: 60px">Tcoin</p>
+          <img
+            src="./img/arrow up.png"
+            alt=""
+            style="width: 500px; position: absolute; top: 160px; left: 350px"
+          />
+          <p style="position: absolute; left: 600px; top: 360px">$750.789</p>
+          <img
+            src="./img/orange b.png"
+            alt=""
+            style="width: 150px; position: absolute; left: -25px; top: 380px"
+          />
+          <p style="position: absolute; top: 430px; left: 60px">Bitcoin</p>
+          <img
+            src="./img/arrow up.png"
+            alt=""
+            style="width: 500px; position: absolute; top: 210px; left: 350px"
+          />
+          <p style="position: absolute; left: 600px; top: 410px">$325.037</p>
+        </div>
+        <div
+          style="
+            width: 100%;
+            height: 60px;
+            background-color: white;
+            position: absolute;
+            top: 2300px;
+          "
+        >
+          <p
+            style="
+              color: gray;
+              position: absolute;
+              left: 500px;
+              font-size: small;
+            "
+          >
+            Copyright © 2010 - 2020. All right reserved.
+            swiftcryptofxmining.net.
+          </p>
+        </div>
+      </section>
+    </section>
+  </body>
+</html>
